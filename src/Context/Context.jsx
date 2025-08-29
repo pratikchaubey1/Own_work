@@ -6,6 +6,8 @@ function Context(props) {
   const [data, setData] = useState([]);
   const [search, setsearch] = useState("");
   const [cart, setcart] = useState([]);
+ const [dropdownOpen, setDropdownOpen] = useState(false);
+   const [showSearch, setShowSearch] = useState(false);
 
   const url = "https://fakestoreapi.com/products/";
 
@@ -40,7 +42,13 @@ function Context(props) {
   const handleclick = (item) => {
     setcart((prev) => [...prev, item]);
   };
+  
 
+
+const handleSearchToggle = () => {
+  setShowSearch(!showSearch);
+};
+  
   
   const value = {
     data,
@@ -51,6 +59,11 @@ function Context(props) {
     setcart,
     handleclick,
     remove,
+    dropdownOpen, 
+    setDropdownOpen,
+    showSearch,
+    setShowSearch,
+    handleSearchToggle
   };
 
   return (

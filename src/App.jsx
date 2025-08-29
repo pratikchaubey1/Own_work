@@ -10,6 +10,7 @@ import Signup from './page/Signup';
 import About from './page/About';
 import Navbar from './components/Navbar';
 import Footer from './page/footer/Footer';
+import HomePage from './components/HomePage';
 
 function App() {
  
@@ -17,8 +18,15 @@ function App() {
   return(
     <div>
       <Navbar></Navbar>
+      
       <Routes>
-        <Route path='/' element={<Home />} />
+        
+        <Route path='/' element={
+          <>
+          <HomePage/>
+          <Home /> 
+          </>
+          } />
         <Route path='/About' element={<About />} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/Contect' element={<Contact />} />

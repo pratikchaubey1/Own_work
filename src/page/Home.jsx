@@ -6,16 +6,6 @@ function Card() {
   return (
     <div className='mt-20'>
 
-    <div className="min-h-screen  bg-gray-50 px-2 sm:px-6 md:px-12 py-6">
-      
-      <div className="w-full max-w-7xl mx-auto mb-10 rounded-2xl overflow-hidden shadow-xl">
-        <img
-          src="https://i.pinimg.com/736x/ee/b3/59/eeb359d08bb0e8a18b62ce0c64721884.jpg"
-          alt="Top banner"
-          className="w-full h-[200px] sm:h-[350px] md:h-[500px] object-cover transition-transform duration-500 hover:scale-105 hover:shadow-lg hover:shadow-gray-300"
-          />
-      </div>
-
       
       <div className="max-w-7xl mx-auto bg-white/70 backdrop-blur-lg rounded-2xl shadow-xl p-4 sm:p-8 border border-gray-100">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -63,7 +53,7 @@ function Card() {
         </div>
       </div>
     </div>
-          </div>
+        
   );
 }
 
